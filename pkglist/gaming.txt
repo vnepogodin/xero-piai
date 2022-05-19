@@ -1,0 +1,9 @@
+bottles
+gamemode
+goverlay-bin
+heroic-games-launcher-bin
+lutris
+mangohud-x11
+proton-community-updater
+proton-ge-custom-bin
+steam-native-runtime

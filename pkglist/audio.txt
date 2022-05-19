@@ -1,0 +1,13 @@
+amarok
+ardour
+audacity
+deezer
+elisa
+glava
+gmusicbrowser
+kwave
+olivia
+radiotray
+rhythmbox
+sayonara-player
+spotify-adblock

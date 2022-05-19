@@ -1,0 +1,337 @@
+- name: "Android Tools"
+  packages:
+    - airdroid-nativefier
+    - android-studio
+    - android-tools
+    - android-file-transfer
+    - android-sdk-platform-tools
+    - droidcam
+    - qtscrcpy
+    - scrcpy
+- name: "Audio & Music Tools"
+  subgroups:
+      - name: "Audio Players"
+        packages:
+           - amarok
+           - audacious
+           - audacious-plugins
+           - deezer
+           - elisa
+           - gmusicbrowser
+           - olivia
+           - radiotray
+           - sayonara-player
+           - spotify-adblock
+           - tauon-music-box
+      - name: "Audio Editors"
+        packages:
+           - ardour
+           - audacity
+           - kwave
+           - lmms
+      - name: "Audio Converters"
+        packages:
+           - ciano
+           - gnac
+           - soundconverter
+           - transmageddon
+      - name: "Other Audio Tools"
+        packages:
+           - easytag
+           - element
+           - glava
+           - noisetorch
+           - picard
+           - rhythmbox
+           - soundux
+- name: "Benchmarking Tools"
+  packages:
+    - blender-benchmark
+    - geekbench
+    - gputest
+    - phoronix-test-suite
+- name: "Dev Studio Tools"
+  subgroups:
+      - name: "Code Editors"
+        packages:
+           - atom
+           - kdevelop
+           - notepadqq
+           - sublime-text-4
+      - name: "GitHub Tools"
+        packages:
+           - gitahead
+           - gitg
+           - gitfiend
+           - gitkraken
+      - name: "VIM & Tools"
+        packages:
+           - vim
+           - neovim-qt
+           - vim-runtime
+      - name: "Visual Studio"
+        packages:
+           - code
+           - visual-studio-code-bin
+           - vscodium-bin
+      - name: "Other Dev Tools"
+        packages:
+           - gammaray
+           - guvcview
+           - hugo
+           - qtcreator
+           - simplenote-electron-bin
+- name: "Disk & USB Tools"
+  packages:
+    - brasero
+    - baobab
+    - etcher-bin
+    - gparted
+    - rpi-imager
+    - ventoy-bin
+- name: "Gaming"
+  packages:
+    - bottles
+    - gamemode
+    - goverlay-bin
+    - heroic-games-launcher-bin
+    - lutris
+    - mangohud-x11
+    - protonup-qt
+    - steam-amd
+    - steam-intel
+    - steam-nvidia
+- name: "Graphics Studio"
+  packages:
+    - blender
+    - darktable
+    - digikam
+    - flameshot
+    - gimp
+    - inkscape
+    - krita
+- name: "Internet"
+  subgroups:
+      - name: "Browsers"
+        packages:
+           - brave-bin
+           - chromium
+           - ferdi-bin
+           - firefox
+           - firefox-adblock-plus
+           - librewolf-bin
+           - netsurf
+           - opera
+           - opera-ffmpeg-codecs
+           - otter-browser
+           - seamonkey
+           - tangram
+           - tor-browser
+           - vivaldi
+           - vivaldi-ffmpeg-codecs
+           - waterfox-g4-bin
+           - webapp-manager
+      - name: "E-mail Clients"
+        packages:
+           - claws-mail
+           - evolution
+           - geary
+           - kmail
+           - mailspring
+           - thunderbird
+           - trojita
+      - name: "Social Clients"
+        packages:
+          - caprine
+          - discord
+          - element-desktop
+          - fractal
+          - google-chat-linux-bin
+          - google-messages
+          - jitsi-meet-desktop-bin
+          - mumble
+          - neochat
+          - pidgin
+          - signal-desktop
+          - skypeforlinux-stable-bin
+          - slack-desktop
+          - teams
+          - telegram-desktop
+          - tweetdeck-desktop
+          - viber
+          - wire-desktop
+          - zoom
+      - name: "Download Managers"
+        packages:
+          - deluge
+          - dropbox
+          - filezilla
+          - fragments
+          - freedownloadmanager
+          - jdownloader2
+          - ktorrent
+          - megasync-bin
+          - nitroshare
+          - persepolis
+          - qbittorrent
+          - transmission-qt
+          - xtreme-download
+- name: "Office Suites"
+  subgroups:
+      - name: "Libre Office"
+        packages:
+           - libreoffice-fresh
+           - hunspell-en_us
+      - name: "Other Suites"
+        packages:
+           - freeoffice
+           - ms-office-online
+           - onlyoffice-bin
+      - name: "WPS Office"
+        packages:
+           - wps-office
+           - ttf-wps-fonts
+           - wps-office-fonts
+- name: "Package Managers"
+  packages:
+    - aura-bin
+    - bauh
+    - discover
+    - octopi
+- name: "Password Managers"
+  packages:
+    - bitwarden
+    - enpass-bin
+    - keepassxc
+    - lastpass
+- name: "Remote Desktop"
+  packages:
+    - nomachine
+    - parsec-bin
+    - realvnc-vnc-server
+    - realvnc-vnc-viewer
+    - remmina
+    - teamviewer
+- name: "Terminal Emulators"
+  packages:
+    - alacritty
+    - alacritty-themes
+    - cool-retro-term
+    - gnome-terminal-transparency
+    - guake
+    - rxvt-unicode
+- name: "Themes & Tools"
+  subgroups:
+      - name: "The Utilities"
+        packages:
+           - konsave
+           - lightly-git
+           - variety
+           - xscreensaver
+      - name: "Arc Theme"
+        packages:
+          - arc-darkest-theme-git
+          - arc-firefox-theme-git
+          - arc-gtk-theme
+          - arc-icon-theme
+          - arc-kde
+          - vlc-arc-dark-git
+      - name: "Dracula Theme"
+        packages:
+           - ant-dracula-gtk-theme
+           - ant-dracula-kde-theme-git
+           - ant-dracula-kvantum-theme-git
+           - dracula-icons-git
+           - konsole-dracula-git
+      - name: "Nordic Theme"
+        packages:
+           - kvantum-theme-nordic-git
+           - nordic-darker-theme
+           - nordic-kde-git
+           - nordic-theme
+           - sddm-nordic-theme-git
+           - zafiro-icon-theme
+      - name: "Sweet Theme"
+        packages:
+          - plasma-theme-sweet
+          - sweet-gtk-theme
+          - sweet-gtk-theme-dark
+          - sweet-kde-git
+          - kvantum-theme-sweet-git
+          - beautyline
+- name: "Utilities"
+  subgroups:
+      - name: "Resource Monitors"
+        packages:
+           - btop
+           - gotop
+           - nvtop
+      - name: "CPU Tools"
+        packages:
+          - cpu-x
+          - cpufetch
+          - cpuid
+      - name: "CLI Tools"
+        packages:
+           - bash-pipes
+           - cava
+           - cmatrix
+           - cowsay
+           - putty
+           - s-tui
+           - tty-clock-git
+           - wttr
+      - name: "System Utilities"
+        packages:
+           - appimagelauncher
+           - barrier
+           - caffeine-ng
+           - gnome-firmware
+           - kwin-bismuth-bin
+           - quickgui-bin
+           - warpinator
+           - wireshark-qt
+- name: "Video Tools"
+  subgroups:
+      - name: "Video Players"
+        packages:
+           - baka-mplayer
+           - hypnotix
+           - mpv
+           - plex-media-player
+           - plex-media-server
+           - stremio
+           - vlc
+      - name: "Video Editors"
+        packages:
+           - kdenlive
+           - obs-studio
+           - openshot
+           - pitivi
+           - shotcut
+           - simplescreenrecorder
+      - name: "Video Converters"
+        packages:
+          - handbrake
+          - makemkv
+          - mkvtoolnix-gui
+          - mystiq
+      - name: "Other Video Tools"
+        packages:
+          - filebot
+          - guvcview
+          - mediainfo-gui
+          - yt-dlp
+- name: "Virtualization"
+  packages:
+    - anbox-support
+    - gnome-boxes
+    - virt-manager-meta
+    - virtualbox-meta
+    - vmware-workstation
+- name: "Wine All in One"
+  packages:
+    - wineasio
+    - wine-meta
+    - wine-installer
+    - exe-thumbnailer

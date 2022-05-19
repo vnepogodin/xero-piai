@@ -1,0 +1,4 @@
+blender-benchmark
+geekbench
+gputest
+phoronix-test-suite

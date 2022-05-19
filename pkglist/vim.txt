@@ -1,0 +1,3 @@
+vim
+neovim-qt
+vim-runtime

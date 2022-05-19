@@ -1,0 +1,8 @@
+airdroid-nativefier
+android-studio
+android-tools
+android-file-transfer
+android-sdk-platform-tools
+droidcam
+qtscrcpy
+scrcpy

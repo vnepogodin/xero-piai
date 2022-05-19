@@ -39,3 +39,4 @@ Second, build it:
 * [Qt](https://www.qt.io) used for GUI.
 * [A modern formatting library](https://github.com/fmtlib/fmt) used for formatting strings, output and logging.
 * [Ranges](https://github.com/ericniebler/range-v3) used for ranges support with clang.
+

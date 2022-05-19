@@ -1,0 +1,6 @@
+nomachine
+parsec-bin
+realvnc-vnc-server
+realvnc-vnc-viewer
+remmina
+teamviewer

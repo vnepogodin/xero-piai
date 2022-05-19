@@ -1,0 +1,13 @@
+deluge
+dropbox
+filezilla
+fragments
+freedownloadmanager
+jdownloader2
+ktorrent
+megasync-bin
+nitroshare
+persepolis
+qbittorrent
+transmission-qt
+xtreme-download
