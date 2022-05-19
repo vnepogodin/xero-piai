@@ -370,11 +370,11 @@ void MainWindow::loadTxtFiles() {
                                   [[maybe_unused]] auto&& uploadNow, [[maybe_unused]] auto&& userdata) -> bool { return true; }));
 
     if (r.error.code == cpr::ErrorCode::OK) {
-        std::ofstream pkglistyaml{"/usr/lib/cachyos-pi/pkglist.yaml"};
+        std::ofstream pkglistyaml{"/usr/lib/xero-piai/pkglist.yaml"};
         pkglistyaml << r.text;
     }
 
-    QFile file("/usr/lib/cachyos-pi/pkglist.yaml");
+    QFile file("/usr/lib/xero-piai/pkglist.yaml");
     if (!file.open(QFile::ReadOnly | QFile::Text)) {
         spdlog::error("Could not open: {}", file.fileName().toStdString());
         return;
