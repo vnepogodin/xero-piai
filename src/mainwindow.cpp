@@ -365,7 +365,7 @@ void MainWindow::outputAvailable(const QString& output) {
 // Load info from the .txt files
 void MainWindow::loadTxtFiles() {
     spdlog::debug("+++ {} +++", __PRETTY_FUNCTION__);
-    cpr::Response r = cpr::Get(cpr::Url{"https://raw.githubusercontent.com/xerolinux/xero-piai/develop/pkglist.yaml"},
+    cpr::Response r = cpr::Get(cpr::Url{"https://raw.githubusercontent.com/xerolinux/xero-piai/main/pkglist.yaml"},
         cpr::ProgressCallback([&]([[maybe_unused]] auto&& downloadTotal, [[maybe_unused]] auto&& downloadNow, [[maybe_unused]] auto&& uploadTotal,
                                   [[maybe_unused]] auto&& uploadNow, [[maybe_unused]] auto&& userdata) -> bool { return true; }));
 
