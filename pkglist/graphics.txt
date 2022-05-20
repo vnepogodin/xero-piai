@@ -1,7 +1,0 @@
-blender
-darktable
-digikam
-flameshot
-gimp
-inkscape
-krita

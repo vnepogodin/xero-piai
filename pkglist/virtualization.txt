@@ -1,6 +1,0 @@
-anbox-support
-gnome-boxes
-virt-manager-meta
-virtualbox-meta
-vmware-workstation
-

@@ -1,7 +1,0 @@
-cpu-x
-cpufetch
-cpuid
-gnome-firmware
-kwin-bismuth-bin
-system-monitoring-center
-wireshark-qt

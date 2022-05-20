@@ -1,6 +1,0 @@
-brasero
-baobab
-etcher-bin
-gparted
-rpi-imager
-ventoy-bin

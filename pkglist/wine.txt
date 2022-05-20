@@ -1,6 +1,0 @@
-wineasio
-wine-meta
-wine-installer
-exe-thumbnailer
-
-

@@ -1,8 +1,0 @@
-libreoffice-fresh
-hunspell-en_us
-freeoffice
-ms-office-online
-onlyoffice-bin
-wps-office
-ttf-wps-fonts
-wps-office-fonts

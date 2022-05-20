@@ -1,7 +1,0 @@
-claws-mail
-evolution
-geary
-kmail
-mailspring
-thunderbird
-trojita
