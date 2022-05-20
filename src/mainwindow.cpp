@@ -923,8 +923,8 @@ bool MainWindow::confirmActions(const QString& names, const QString& action, boo
         msgBox.setText(msg);
         msgBox.setInformativeText("\n" + names + "\n\n" + msg_ok_status.c_str());
 
-        msgBox.addButton("Replace", QMessageBox::ButtonRole::AcceptRole);
-        msgBox.addButton("Ignore", QMessageBox::ButtonRole::RejectRole);
+        msgBox.addButton("Resolve/Install", QMessageBox::ButtonRole::AcceptRole);
+        msgBox.addButton("Cancel/Reject", QMessageBox::ButtonRole::RejectRole);
 
         // make it wider
         auto horizontalSpacer = new QSpacerItem(600, 0, QSizePolicy::Minimum, QSizePolicy::Expanding);
