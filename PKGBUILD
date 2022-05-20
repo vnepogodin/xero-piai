@@ -5,8 +5,8 @@ pkgname=xerolinux-tool
 _destname1="/"
 _pkgverpkginst=1.0.5
 _urlpkginst="https://github.com/xerolinux/xero-piai"
-pkgver=0.2.5
-pkgrel=2
+pkgver=0.2.6
+pkgrel=1
 pkgdesc="XeroLinux Configuration Tool"
 arch=('any')
 url="https://github.com/XeroLinux"
@@ -55,5 +55,4 @@ package() {
     cd build
     mv cachyos-pi-bin xero-piai
     install -Dm744 xero-piai "${pkgdir}/usr/lib/xero-piai/xero-piai"
-    install -Dm644 ../pkglist/*.txt "${pkgdir}/usr/lib/xero-piai/"
 }
