@@ -1,4 +1,4 @@
-# xXeroLinux-PiAi
+# XeroLinux-PiAi
 
 Desc/Credit
 ------------
