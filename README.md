@@ -1,4 +1,7 @@
-# xerolinux-piai
+# xXeroLinux-PiAi
+
+Desc/Credit
+------------
 Simple Software Application Package Installer, this is a fork of the [PackageInstaller](https://github.com/CachyOS/packageinstaller) created by [Vlad](https://github.com/vnepogodin) From the [CachyOS](https://github.com/CachyOS) Project..
 
 Requirements
