@@ -1,5 +1,5 @@
 # xerolinux-piai
-Simple Software Application Package Installer.
+Simple Software Application Package Installer, created by [Vlad](https://github.com/vnepogodin) From the [CachyOS](https://github.com/CachyOS) Project..
 
 Requirements
 ------------
