@@ -227,6 +227,7 @@
            - konsave
            - lightly-git
            - variety
+           - wallpaper-engine-plasma
            - xscreensaver
       - name: "Arc Theme"
         packages:
