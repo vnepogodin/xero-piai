@@ -3,9 +3,9 @@
 
 pkgname=xerolinux-tool
 _destname1="/"
-_pkgverpkginst=1.0.5
+_pkgverpkginst=1.0.7
 _urlpkginst="https://github.com/xerolinux/xero-piai"
-pkgver=0.2.6
+pkgver=0.2.7
 pkgrel=2
 pkgdesc="XeroLinux Configuration Tool"
 arch=('any')
