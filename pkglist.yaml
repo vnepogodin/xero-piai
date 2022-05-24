@@ -98,9 +98,6 @@
     - lutris
     - mangohud-x11
     - protonup-qt
-    - steam-amd
-    - steam-intel
-    - steam-nvidia
 - name: "Graphics Studio"
   packages:
     - blender
