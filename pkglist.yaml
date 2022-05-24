@@ -325,14 +325,10 @@
           - yt-dlp
 - name: "Virtualization"
   packages:
-    - anbox-support
     - gnome-boxes
     - virt-manager-meta
     - virtualbox-meta
     - vmware-workstation
 - name: "Wine All in One"
   packages:
-    - wineasio
     - wine-meta
-    - wine-installer
-    - exe-thumbnailer
