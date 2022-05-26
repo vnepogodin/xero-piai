@@ -91,7 +91,6 @@
     - ventoy-bin
 - name: "Gaming"
   packages:
-    - bottles
     - gamemode
     - goverlay-bin
     - heroic-games-launcher-bin
