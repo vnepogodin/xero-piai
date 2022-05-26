@@ -286,7 +286,6 @@
            - caffeine-ng
            - gnome-firmware
            - kwin-bismuth-bin
-           - quickgui-bin
            - warpinator
            - wireshark-qt
 - name: "Video Tools"
