@@ -73,6 +73,8 @@ MainWindow::MainWindow(QWidget* parent) : QDialog(parent),
     m_ui->setupUi(this);
     setProgressDialog();
 
+    resize(1280, 800);
+
     setup_alpm(m_handle);
 
     connect(&m_timer, &QTimer::timeout, this, &MainWindow::updateBar);
