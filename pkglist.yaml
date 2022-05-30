@@ -15,6 +15,7 @@
            - amarok
            - audacious
            - audacious-plugins
+           - cider-git
            - deezer
            - elisa
            - gmusicbrowser
@@ -95,7 +96,7 @@
     - goverlay-bin
     - heroic-games-launcher-bin
     - lutris
-    - mangohud-x11
+    - mangohud
     - protonup-qt
 - name: "Graphics Studio"
   packages:
