@@ -1,3 +1,17 @@
+- name: "Additional Kernels"
+  subgroups:
+      - name: "Linux Hardened Kernel"
+        packages:
+           - linux-hardened
+           - linux-hardened-headers
+      - name: "Linux LTS Kernel"
+        packages:
+           - linux-lts
+           - linux-lts-headers
+      - name: "Linux ZEN Kernel"
+        packages:
+           - linux-zen
+           - linux-zen-headers
 - name: "Android Tools"
   packages:
     - airdroid-nativefier
@@ -51,6 +65,21 @@
     - geekbench
     - gputest
     - phoronix-test-suite
+- name: "BTRFS Tools"
+  subgroups:
+      - name: "Snapper for BTRFS"
+        packages:
+           - btrfs-assistant
+           - btrfs-du
+           - grub-btrfs
+           - snap-pac
+           - snapper
+           - snapper-gui-git
+           - snapper-support
+      - name: "TimeShift BTRFS Add-ons"
+        packages:
+           - timeshift-autosnap
+           - grub-btrfs
 - name: "Dev Studio Tools"
   subgroups:
       - name: "Code Editors"
@@ -88,7 +117,7 @@
     - baobab
     - etcher-bin
     - gparted
-    - rpi-imager
+    - rpi-imager-bin
     - ventoy-bin
 - name: "Gaming"
   packages:
@@ -114,7 +143,6 @@
         packages:
            - brave-bin
            - chromium
-           - ferdi-bin
            - firefox
            - firefox-adblock-plus
            - librewolf-bin
@@ -137,12 +165,13 @@
            - kmail
            - mailspring
            - thunderbird
-           - trojita
       - name: "Social Clients"
         packages:
           - caprine
           - discord
           - element-desktop
+          - ferdi-bin
+          - ferdium-bin
           - fractal
           - google-chat-linux-bin
           - google-messages
@@ -198,10 +227,19 @@
     - octopi
 - name: "Password Managers"
   packages:
+    - 1password
     - bitwarden
     - enpass-bin
     - keepassxc
     - lastpass
+- name: "Power Management"
+  packages:
+    - auto-cpufreq
+    - cpupower
+    - tlp
+    - upower
+    - system76-power
+- name: "Printing Sup
 - name: "Remote Desktop"
   packages:
     - nomachine
@@ -223,6 +261,7 @@
       - name: "The Utilities"
         packages:
            - konsave
+           - kwin-bismuth-bin
            - lightly-git
            - variety
            - wallpaper-engine-plasma
@@ -233,7 +272,7 @@
           - arc-firefox-theme-git
           - arc-gtk-theme
           - arc-icon-theme
-          - arc-kde
+          - arc-kde-git
           - vlc-arc-dark-git
       - name: "Dracula Theme"
         packages:
@@ -280,14 +319,24 @@
            - s-tui
            - tty-clock-git
            - wttr
-      - name: "System Utilities"
+      - name: "Other Utilities"
         packages:
            - appimagelauncher
            - barrier
-           - caffeine-ng
            - gnome-firmware
-           - kwin-bismuth-bin
            - warpinator
+      - name: "System Utilities"
+        packages:
+           - caffeine-ng
+           - corectrl
+           - fancontrol-gui
+           - gnome-firmware
+           - mousetweaks
+           - openrgb
+           - radeontool
+           - solaar
+           - system-monitoring-center
+           - timeshift
            - wireshark-qt
 - name: "Video Tools"
   subgroups:
