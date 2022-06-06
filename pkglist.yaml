@@ -224,7 +224,11 @@
     - aura-bin
     - bauh
     - discover
+    - fetchpkg
+    - kalu-kde
     - octopi
+    - pacseek-bin
+    - paru-bin
 - name: "Password Managers"
   packages:
     - 1password
@@ -239,9 +243,9 @@
     - tlp
     - upower
     - system76-power
-- name: "Printing Sup
 - name: "Remote Desktop"
   packages:
+    - barrier
     - nomachine
     - parsec-bin
     - realvnc-vnc-server
@@ -322,7 +326,6 @@
       - name: "Other Utilities"
         packages:
            - appimagelauncher
-           - barrier
            - gnome-firmware
            - warpinator
       - name: "System Utilities"
