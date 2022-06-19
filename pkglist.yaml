@@ -26,6 +26,7 @@
   subgroups:
       - name: "Audio Players"
         packages:
+           - amberol
            - amarok
            - audacious
            - audacious-plugins
@@ -127,6 +128,7 @@
     - heroic-games-launcher-bin
     - lutris
     - mangohud
+    - moonlight-qt
     - protonup-qt
 - name: "Graphics Studio"
   packages:
@@ -170,7 +172,6 @@
           - caprine
           - discord
           - element-desktop
-          - ferdi-bin
           - ferdium-bin
           - fractal
           - google-chat-linux-bin
