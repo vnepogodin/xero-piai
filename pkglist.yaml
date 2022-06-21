@@ -128,7 +128,7 @@
     - heroic-games-launcher-bin
     - lutris
     - mangohud
-    - moonlight-qt
+    - moonlight-qt-bin
     - protonup-qt
 - name: "Graphics Studio"
   packages:
