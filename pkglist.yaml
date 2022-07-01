@@ -344,13 +344,17 @@
            - wireshark-qt
 - name: "Video Tools"
   subgroups:
+      - name: "Plex Tools"
+        packages:
+           - plex-desktop
+           - plex-htpc
+           - plex-media-player
+           - plex-media-server
       - name: "Video Players"
         packages:
            - baka-mplayer
            - hypnotix
            - mpv
-           - plex-media-player
-           - plex-media-server
            - stremio
            - vlc
       - name: "Video Editors"
