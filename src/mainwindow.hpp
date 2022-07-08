@@ -43,7 +43,6 @@
 
 #include "cmd.hpp"
 #include "lockfile.hpp"
-#include "remotes.hpp"
 #include "versionnumber.hpp"
 
 #include <map>
@@ -58,10 +57,7 @@ class MainWindow;
 }
 
 namespace Tab {
-enum { Popular,
-    Repo,
-    Flatpak,
-    Output };
+enum { Popular, Output };
 }
 namespace PopCol {
 enum { Icon,
@@ -80,17 +76,6 @@ enum { Check,
     Description,
     Status,
     Displayed };
-}
-namespace FlatCol {
-enum { Check,
-    ShortName,
-    LongName,
-    Version,
-    Size,
-    Status,
-    Displayed,
-    Duplicate,
-    FullName };
 }
 namespace Popular {
 enum { Category,
@@ -124,36 +109,27 @@ class MainWindow : public QDialog {
     bool uninstall(const QString& names);
     bool update();
 
-    void blockInterfaceFP(bool block);
     void buildChangeList(QTreeWidgetItem* item);
     void cancelDownload();
     void centerWindow();
     void clearUi();
     void copyTree(QTreeWidget*, QTreeWidget*) const;
-    void displayFilteredFP(QStringList list, bool raw = false);
-    void displayFlatpaks(bool force_update = false);
     void displayPackages();
     void displayPopularApps() const;
     void displayWarning(const QString& repo);
     void enableTabs(bool enable);
     void ifDownloadFailed();
-    void listFlatpakRemotes();
-    void listSizeInstalledFP();
     void loadTxtFiles();
     void processFile(const std::string& group, const std::string& category, const std::vector<std::string>& names);
     void refreshPopularApps();
-    void removeDuplicatesFP();
     void setCurrentTree();
     void setProgressDialog();
-    void setSearchFocus();
     void setup();
     void updateInterface();
 
     static QString addSizes(const QString& arg1, const QString& arg2);
     QString getVersion(const std::string_view& name);
-    QStringList listFlatpaks(const QString& remote, const QString& type = "");
     QStringList listInstalled();
-    QStringList listInstalledFlatpaks(const std::string_view& type = "");
 
     QString m_version{};
 
@@ -186,40 +162,21 @@ class MainWindow : public QDialog {
     void on_treePopularApps_itemCollapsed(QTreeWidgetItem* item);
     void on_treePopularApps_itemExpanded(QTreeWidgetItem* item);
 
-    void on_treeFlatpak_itemChanged(QTreeWidgetItem* item);
     void on_treePopularApps_itemChanged(QTreeWidgetItem* item);
-    void on_treeRepo_itemChanged(QTreeWidgetItem* item);
-
-    void on_pushForceUpdateRepo_clicked();
-
-    void on_checkHideLibs_toggled(bool checked);
 
     void on_lineEdit_returnPressed();
     void on_pushCancel_clicked();
     void on_pushEnter_clicked();
-    void on_pushUpgradeAll_clicked();
-
-    void on_comboRemote_activated(int);
-    void on_comboUser_activated(int index);
-    void on_pushRemotes_clicked();
-    void on_pushUpgradeFP_clicked();
 
     void on_treePopularApps_customContextMenuRequested(const QPoint& pos);
-    void on_treeRepo_customContextMenuRequested(const QPoint& pos);
-
-    void on_pushRemoveUnused_clicked();
-
-    void on_pushRemoveOrphan_clicked();
 
  private:
     Ui::MainWindow* m_ui{};
     alpm_errno_t m_alpm_err{};
     alpm_handle_t* m_handle = alpm_initialize("/", "/var/lib/pacman/", &m_alpm_err);
 
-    QString m_indexFilterFP{};
     bool m_updated_once{};
-    bool m_warning_flatpaks{};
-    bool m_setup_assistant_mode{};
+    bool m_setup_assistant_mode{true};
     int m_height_app{};
 
     Cmd m_cmd{};
@@ -237,15 +194,9 @@ class MainWindow : public QDialog {
     QString m_user{};
     QString m_ver_name{};
     QStringList m_change_list{};
-    QStringList m_flatpaks{};
-    QStringList m_flatpaks_apps{};
-    QStringList flatpaks_runtimes{};
-    QStringList m_installed_apps_fp{};
     QStringList m_installed_packages{};
-    QStringList m_installed_runtimes_fp{};
     QTimer m_timer{};
     QTreeWidget* m_tree{};  // current/calling tree
-    VersionNumber m_fp_ver{};
 
     std::unordered_map<QString, VersionNumber> listInstalledVersions();
 };

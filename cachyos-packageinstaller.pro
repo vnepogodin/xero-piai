@@ -13,7 +13,6 @@ SOURCES += \
     src/mainwindow.cpp \
     src/lockfile.cpp \
     src/pacmancache.cpp \
-    src/remotes.cpp \
     src/about.cpp \
     src/cmd.cpp
 
@@ -23,7 +22,6 @@ HEADERS  += \
     src/lockfile.hpp \
     src/versionnumber.hpp \
     src/pacmancache.hpp \
-    src/remotes.hpp \
     src/version.hpp \
     src/about.hpp \
     src/cmd.hpp

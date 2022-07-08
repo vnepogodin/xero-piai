@@ -105,7 +105,6 @@ add_executable(${PROJECT_NAME}-bin
     src/versionnumber.hpp
     src/alpm_helper.hpp src/alpm_helper.cpp
     src/pacmancache.hpp src/pacmancache.cpp
-    src/remotes.hpp src/remotes.cpp
     src/about.hpp src/about.cpp
     src/cmd.hpp src/cmd.cpp
     src/config.hpp src/config.cpp
