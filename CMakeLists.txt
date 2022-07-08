@@ -35,19 +35,19 @@ pkg_check_modules(
 CPMAddPackage(
   NAME fmt
   GITHUB_REPOSITORY fmtlib/fmt
-  GIT_TAG 7e4ad40171aa552d38cb99a5c181a0d7b150facc
+  GIT_TAG c4ee726532178e556d923372f29163bd206d7732
   EXCLUDE_FROM_ALL YES
 )
 CPMAddPackage(
   NAME spdlog
   GITHUB_REPOSITORY gabime/spdlog
-  GIT_TAG a49456f7f21fb802c1000fd79ef05911aa2101b7
+  GIT_TAG 6c95f4c8168401badff89d0c16e3887ea91ea9ad
   EXCLUDE_FROM_ALL YES
 )
 CPMAddPackage(
   NAME cpr
   GITHUB_REPOSITORY libcpr/cpr
-  GIT_TAG 5e64f82c5403f4ad0b81ec391e818699feb334c4
+  GIT_TAG 1.8.4
   EXCLUDE_FROM_ALL YES
 )
 CPMAddPackage(
@@ -61,7 +61,7 @@ if(CMAKE_CXX_COMPILER_ID MATCHES ".*Clang")
    CPMAddPackage(
      NAME range-v3
      GITHUB_REPOSITORY ericniebler/range-v3
-     GIT_TAG c7ad677c7fe7a3e94d2a44e2ebe89047c96eeb94
+     GIT_TAG 0.12.0
      EXCLUDE_FROM_ALL YES
    )
 endif()
