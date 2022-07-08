@@ -86,7 +86,7 @@ int main(int argc, char* argv[]) {
         return EXIT_FAILURE;
     }
 
-    bool setup_mode{};
+    bool setup_mode{true};
     for (int i = 0; i < argc; ++i) {
         const char* tmp = argv[i];
         if (!tmp) {
